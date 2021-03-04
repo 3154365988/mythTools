@@ -10,9 +10,9 @@ public class RegexUtil {
      * @param filePath 文件路径
      * @param regex 正则表达式
      * @return 所有符合的行
-     * @throws Exception
+     * @throws IOException
      */
-    public static String matchFileContent(String filePath, String regex) throws Exception {
+    public static String matchFileContent(String filePath, String regex) throws IOException {
         StringBuilder sb = new StringBuilder();
         File file = new File(filePath);
         if (!file.exists()){
